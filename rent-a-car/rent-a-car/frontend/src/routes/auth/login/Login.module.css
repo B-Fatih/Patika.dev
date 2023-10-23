@@ -1,0 +1,98 @@
+.login {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: 10px;
+  text-align: left;
+}
+.container {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  text-align: center;
+  width: 400px;
+}
+.container h1 {
+  font-size: 24px;
+  margin: 0;
+}
+.container h2 {
+  font-size: 14px; /* Reduced the font size for the subtitle */
+  margin: 10px 0;
+}
+.formGroup {
+  text-align: left;
+  margin: 20px 0;
+  padding: 0 10px; /* Equal padding on left and right */
+}
+.formGroup label {
+  display: block;
+  font-weight: bold;
+  font-size: 12px; /* Smaller font size for labels */
+  padding-bottom: 5px;
+  color: #363535;
+}
+.formGroup input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: #f0f0f0; /* Gray background */
+}
+.passwordIcon {
+  position: relative;
+}
+.passwordIcon i {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.loginButton {
+  margin-top: 20px;
+  width: 100%; /* Make the button full width */
+  background-color: #0071e3; /* Blue background */
+  color: #fff; /* White text */
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.divider {
+  border-top: 1px solid #ccc;
+  margin: 20px 0;
+}
+.signInLink {
+  color: #0073e6; /* Blue color for the "Sign in" text */
+}
+.passwordInput {
+  position: relative;
+}
+
+.passwordInput input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: #f0f0f0; /* Gray background */
+}
+
+.passwordInput i {
+  position: absolute;
+  right: 10px;
+  top: 65%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: rgb(128, 128, 128);
+}

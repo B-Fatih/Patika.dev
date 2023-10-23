@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>React App</title>
+</head>
+<body>
+<div id="root"></div>
+<script>
+    function loadReact() {
+        const reactScript = document.createElement('script');
+        reactScript.src = 'https://unpkg.com/react@16/umd/react.development.js';
+        reactScript.async = true;
+        document.body.appendChild(reactScript);
+
+        reactScript.onload = () => {
+            loadReactDOM();
+        };
+    }
+
+    function loadReactDOM() {
+        const reactDOMScript = document.createElement('script');
+        reactDOMScript.src = 'https://unpkg.com/react-dom@16/umd/react-dom.development.js';
+        reactDOMScript.async = true;
+        document.body.appendChild(reactDOMScript);
+
+        reactDOMScript.onload = () => {
+            renderReactApp();
+        };
+    }
+
+    function renderReactApp() {
+        const rootElement = document.getElementById('root');
+
+        const App = () => (
+            <div>
+                <h1>Hello, React App!</h1>
+            </div>
+        );
+
+        ReactDOM.render(<App />, rootElement);
+    }
+
+    loadReact();
+</script>
+</body>
+</html>

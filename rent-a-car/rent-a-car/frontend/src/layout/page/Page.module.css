@@ -1,0 +1,13 @@
+.page {
+  flex-grow: 1; /* Expand to fill available space */
+  margin: 0; /* Remove any margin */
+  /* Add padding as needed */
+  padding: 20px 30px;
+}
+
+.header {
+  flex: 1;
+  padding-bottom: 20px;
+  font-size: 30px;
+  font-weight: 600;
+}
